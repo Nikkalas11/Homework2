@@ -12,6 +12,40 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+.heading-star {
+  position: relative;
+}
+
+.star2 {
+  position: absolute;
+  top: 94px;
+  left: 63px;
+}
+
+.star3 {
+  position: absolute;
+  top: 69px;
+  left: 156px;
+}
+
+.star-group {
+  position: absolute;
+  top: -333px;
+  left: 854px;
+}
+
+.star5 {
+  position: absolute;
+  top: 538px;
+  left: 948px;
+}
+
+.star4 {
+  position: absolute;
+  top: 568px;
+  left: 1013px;
+}
+
 .top {
   height: 800px;
   background-color: rgb(225, 255, 143);
