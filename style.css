@@ -53,15 +53,18 @@ body {
 
 .top-page {
   max-width: 768px;
+  padding-top: 196px;
 }
 .top-page__title {
-  padding-top: 196px;
   padding-bottom: 24px;
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   text-align: left;
+}
+.top-page__title_about {
+  color: rgb(255, 255, 255);
 }
 .top-page__description {
   color: rgb(32, 32, 39);
@@ -73,6 +76,9 @@ body {
 }
 .top-page__description_bold {
   font-weight: 600;
+}
+.top-page__description_about {
+  color: rgb(255, 255, 255);
 }
 .top-page__link {
   display: flex;
@@ -131,4 +137,28 @@ body {
   to {
     transform: translateX(-100%);
   }
+}
+.about-games {
+  padding-top: 94px;
+  background-color: rgb(32, 32, 39);
+  height: 1470px;
+  position: relative;
+}
+
+.star1 {
+  position: absolute;
+  top: 77px;
+  left: 933px;
+}
+
+.star11 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+}
+
+.star12 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
 }/*# sourceMappingURL=style.css.map */

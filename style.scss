@@ -46,14 +46,17 @@ body {
 }
 .top-page {
     max-width: 768px;
+    padding-top: 196px;
     &__title {
-      padding-top: 196px;
       padding-bottom: 24px;
       color: rgb(32, 32, 39);
       font-size: 64px;
       font-weight: 700;
       line-height: 78px;
       text-align: left;
+      &_about {
+        color: rgb(255, 255, 255);
+      }
     }
     &__description {
       color: rgb(32, 32, 39);
@@ -64,6 +67,9 @@ body {
       padding-bottom: 48px;
       &_bold {
         font-weight: 600;
+      }
+      &_about {
+        color: rgb(255, 255, 255);
       }
     }
     &__link {
@@ -120,4 +126,26 @@ body {
 @keyframes strip-move {
   from { transform: translateX(0%); }
     to { transform: translateX(-100%); }
+}
+
+.about-games {
+  padding-top: 94px;
+  background-color: rgb(32, 32, 39);
+  height: 1470px;
+  position: relative;
+}
+.star1 {
+  position: absolute;
+  top: 77px;
+  left: 933px;
+}
+.star11 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+}
+.star12 {
+  position: absolute;
+  top: 822px; 
+  left: 40px;
 }
