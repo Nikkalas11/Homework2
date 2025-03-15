@@ -133,12 +133,19 @@ body {
   background-color: rgb(32, 32, 39);
   height: 1470px;
   position: relative;
+  &__star {
+    position: absolute;
+    top: 77px;
+    left: 933px;
+    transform: rotate(-6.77deg);
+  }
   &__block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 32px;
   }
   &__card {
+    text-decoration: none;
     border-radius: 30px;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
@@ -175,16 +182,8 @@ body {
     line-height: 39px;
     padding-top: 16px;
   }
-
-
-
 }
 
-.star1 {
-  position: absolute;
-  top: 77px;
-  left: 933px;
-}
 .star11 {
   position: absolute;
   top: 770px;
@@ -194,4 +193,16 @@ body {
   position: absolute;
   top: 822px; 
   left: 40px;
+}
+
+.foot {
+  padding: 60px;
+  background-color: rgb(189, 237, 53);
+  &__text {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+  }
 }
