@@ -61,4 +61,40 @@ body {
 .top-page__link:hover {
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
+}
+
+.ani-strip {
+  margin-top: 156px;
+  background-color: rgb(188, 236, 48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3220px;
+  height: 90px;
+  overflow: hidden;
+  white-space: inherit;
+  animation: strip-move 24s linear infinite;
+}
+.ani-strip__text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  padding-right: 51px;
+}
+.ani-strip__text::after {
+  content: url(./Img/Star.svg);
+  padding-left: 51px;
+}
+
+@keyframes strip-move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=style.css.map */
