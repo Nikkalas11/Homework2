@@ -32,6 +32,7 @@ body {
   position: absolute;
   top: -333px;
   left: 854px;
+  overflow-x: hidden;
 }
 
 .star5 {
@@ -112,6 +113,7 @@ body {
   width: 3200px;
   height: 90px;
   overflow: hidden;
+  white-space: inherit;
   animation: strip-move 5s linear infinite;
 }
 .ani-strip__text {
@@ -222,4 +224,38 @@ body {
   font-weight: 600;
   line-height: 29px;
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .star2 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+  }
+  .star3 {
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .star4 {
+    width: 39px;
+    height: 41px;
+    left: 304px;
+    top: 580px;
+  }
+  .star5 {
+    width: 18px;
+    height: 18px;
+    left: 273px;
+    top: 557px;
+  }
+  .top {
+    height: 700px;
+  }
 }/*# sourceMappingURL=style.css.map */

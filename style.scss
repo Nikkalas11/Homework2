@@ -28,6 +28,8 @@ body {
   position: absolute;
   top: -333px;
   left: 854px;
+  overflow-x: hidden;
+  
 }
 .star5 {
   position: absolute;
@@ -105,7 +107,7 @@ body {
   width: 3200px;
   height: 90px;
   overflow: hidden;
-  // white-space:inherit;
+  white-space:inherit;
   animation: strip-move 5s linear infinite;
 
   &__text {
@@ -215,3 +217,5 @@ body {
     text-align: center;
   }
 }
+
+@import 'mobile';
