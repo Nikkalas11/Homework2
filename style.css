@@ -220,6 +220,85 @@ body {
   left: 40px;
 }
 
+.mini-games {
+  height: 3500px;
+  background-color: rgb(32, 32, 39);
+  position: relative;
+}
+.mini-games__block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mini-games__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 46px;
+  padding-bottom: 72px;
+  color: rgb(255, 255, 255);
+}
+.mini-games__card {
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+.mini-games__card_reverse {
+  flex-direction: row-reverse;
+}
+.mini-games__text {
+  padding: 48px;
+}
+.mini-games__name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  text-align: left;
+  padding-bottom: 24px;
+  padding-right: 40px;
+}
+.mini-games__discription {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  padding-bottom: 36px;
+}
+.mini-games__btn {
+  width: 247px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  text-decoration: none;
+}
+.mini-games__btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+.mini-games__pic {
+  background-size: cover;
+}
+
+.mini-star1 {
+  position: absolute;
+  top: 92px;
+  left: calc(100% - 216px);
+}
+
 .foot {
   padding: 60px;
   background-color: rgb(189, 237, 53);
@@ -263,7 +342,9 @@ body {
   }
   .top {
     height: 700px;
-    background-image: none;
+    background-image: url(./Img/StarBGmobile.png);
+    background-position: calc(100% + 94px) -94px;
+    background-repeat: no-repeat;
   }
   .top-page {
     padding-top: 147px;

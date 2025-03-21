@@ -30,7 +30,9 @@
 
     .top {
         height: 700px;
-        background-image: none;
+        background-image: url(./Img/StarBGmobile.png);
+        background-position: calc(100% + 94px) -94px;
+        background-repeat: no-repeat;
     }
     .top-page {
         // max-width: 343px;
@@ -77,6 +79,7 @@
     .about-games {
         display: none;
     }
+    
     
 
 }
