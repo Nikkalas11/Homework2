@@ -112,13 +112,11 @@ body {
   margin-top: 156px;
   background-color: rgb(188, 236, 48);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 3200px;
   height: 90px;
-  overflow: hidden;
-  white-space: inherit;
-  animation: strip-move 5s linear infinite;
+  overflow-x: hidden;
+  text-wrap: nowrap;
 }
 .ani-strip__text {
   color: rgb(32, 32, 39);
@@ -135,14 +133,6 @@ body {
   padding-left: 51px;
 }
 
-@keyframes strip-move {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
 .about:hover {
   transform: scale(1.1);
 }
@@ -375,7 +365,6 @@ body {
   }
   .ani-strip {
     margin-top: 131px;
-    width: 1717px;
     height: 51px;
   }
   .ani-strip__text {

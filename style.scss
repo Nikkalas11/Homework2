@@ -107,13 +107,14 @@ body {
   margin-top: 156px;
   background-color: rgb(188, 236, 48);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 3200px;
+  //width: 3220px;
   height: 90px;
-  overflow: hidden;
-  white-space:inherit;
-  animation: strip-move 5s linear infinite;
+  overflow-x: hidden;
+  text-wrap: nowrap;
+   
+  //animation: strip-move 5s linear infinite;
 
   &__text {
     color: rgb(32, 32, 39);
@@ -131,10 +132,10 @@ body {
   }
 }
 
-@keyframes strip-move {
-  from { transform: translateX(0%); }
-    to { transform: translateX(-100%); }
-}
+// @keyframes strip-move {
+//   from { transform: translateX(0%); }
+//     to { transform: translateX(-100%); }
+//}
 
 .about:hover {
   transform:scale(1.1);
