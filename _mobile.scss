@@ -30,6 +30,56 @@
 
     .top {
         height: 700px;
+        background-image: url(./Img/StarBGmobile.png);
+        background-position: calc(100% + 94px) -94px;
+        background-repeat: no-repeat;
     }
+    .top-page {
+        // max-width: 343px;
+        padding-top: 147px;
+        &__title {
+            font-size: 40px;
+            line-height: 49px;
+            letter-spacing: 0px;
+            text-align: center; 
+        }
+        &__description {
+            padding-right: 0px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center; 
+            padding-bottom: 36px;
+        }
+        &__btn {
+            display: flex;
+            justify-content: center;
+
+        }
+        &__link {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    .ani-strip {
+        margin-top: 131px;
+        //width: 1717px;
+        height: 51px;
+        &__text {
+            font-size: 16px;
+            padding-right: 27px;
+            &::after {
+                content: url(./Img/Star-mobile.svg);
+                padding-left: 27px;
+            }
+            
+        }
+    }
+    .about-games {
+        display: none;
+    }
+    
+    
 
 }
