@@ -50,6 +50,9 @@ body {
 .top {
   height: 800px;
   background-color: rgb(225, 255, 143);
+  background-image: url(./Img/star-group.png);
+  background-position: calc(100% + 488px) 100%;
+  background-repeat: no-repeat;
 }
 
 .top-page {
@@ -68,6 +71,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .top-page__description {
+  padding-right: 48px;
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -108,13 +112,11 @@ body {
   margin-top: 156px;
   background-color: rgb(188, 236, 48);
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  width: 3200px;
   height: 90px;
-  overflow: hidden;
-  white-space: inherit;
-  animation: strip-move 5s linear infinite;
+  overflow-x: hidden;
+  text-wrap: nowrap;
 }
 .ani-strip__text {
   color: rgb(32, 32, 39);
@@ -131,14 +133,6 @@ body {
   padding-left: 51px;
 }
 
-@keyframes strip-move {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
 .about:hover {
   transform: scale(1.1);
 }
@@ -146,6 +140,9 @@ body {
 .about-games {
   padding-top: 94px;
   background-color: rgb(32, 32, 39);
+  background-image: url(./Img/aboutGamesStar.png);
+  background-position: calc(100% + 120px) 77px;
+  background-repeat: no-repeat;
   height: 1470px;
   position: relative;
 }
@@ -160,7 +157,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   -moz-column-gap: 32px;
        column-gap: 32px;
-  position: relative;
 }
 .about-games__card {
   text-decoration: none;
@@ -214,6 +210,86 @@ body {
   left: 40px;
 }
 
+.mini-games {
+  display: none;
+  height: 3500px;
+  background-color: rgb(32, 32, 39);
+  position: relative;
+}
+.mini-games__block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mini-games__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 46px;
+  padding-bottom: 72px;
+  color: rgb(255, 255, 255);
+}
+.mini-games__card {
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+.mini-games__card_reverse {
+  flex-direction: row-reverse;
+}
+.mini-games__text {
+  padding: 48px;
+}
+.mini-games__name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  text-align: left;
+  padding-bottom: 24px;
+  padding-right: 40px;
+}
+.mini-games__discription {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  padding-bottom: 36px;
+}
+.mini-games__btn {
+  width: 247px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  text-decoration: none;
+}
+.mini-games__btn:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
+.mini-games__pic {
+  background-size: cover;
+}
+
+.mini-star1 {
+  position: absolute;
+  top: 92px;
+  left: calc(100% - 216px);
+}
+
 .foot {
   padding: 60px;
   background-color: rgb(189, 237, 53);
@@ -257,5 +333,49 @@ body {
   }
   .top {
     height: 700px;
+    background-image: url(./Img/StarBGmobile.png);
+    background-position: calc(100% + 94px) -94px;
+    background-repeat: no-repeat;
+  }
+  .top-page {
+    padding-top: 147px;
+  }
+  .top-page__title {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top-page__description {
+    padding-right: 0px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  .top-page__btn {
+    display: flex;
+    justify-content: center;
+  }
+  .top-page__link {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .ani-strip {
+    margin-top: 131px;
+    height: 51px;
+  }
+  .ani-strip__text {
+    font-size: 16px;
+    padding-right: 27px;
+  }
+  .ani-strip__text::after {
+    content: url(./Img/Star-mobile.svg);
+    padding-left: 27px;
+  }
+  .about-games {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
