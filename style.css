@@ -211,7 +211,6 @@ body {
 }
 
 .mini-games {
-  display: none;
   height: 3500px;
   background-color: rgb(32, 32, 39);
   position: relative;
@@ -232,10 +231,12 @@ body {
   color: rgb(255, 255, 255);
 }
 .mini-games__card {
+  height: 500px;
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
   display: flex;
+  justify-content: space-between;
 }
 .mini-games__card_reverse {
   flex-direction: row-reverse;
@@ -249,14 +250,18 @@ body {
   line-height: 59px;
   text-align: left;
   padding-bottom: 24px;
-  padding-right: 40px;
+  padding-right: 50px;
 }
 .mini-games__discription {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
+  padding-right: 81px;
   padding-bottom: 36px;
+}
+.mini-games__discription_last {
+  padding-right: 0;
 }
 .mini-games__btn {
   width: 247px;
@@ -287,7 +292,13 @@ body {
 .mini-star1 {
   position: absolute;
   top: 92px;
-  left: calc(100% - 216px);
+  left: calc(100% - 150px);
+}
+
+.mini-star2 {
+  position: absolute;
+  bottom: 55px;
+  left: calc(100% - 178px);
 }
 
 .foot {

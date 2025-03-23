@@ -1,21 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-  
+
 body {
   font-family: "Montserrat", serif;
 }
-  
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
 .heading-star {
   position: relative;
-  
 }
-.star2{
+.star2 {
   position: absolute;
   top: 94px;
   left: 63px;
@@ -30,7 +29,6 @@ body {
   top: -333px;
   left: 854px;
   overflow-x: hidden;
-  
 }
 .star5 {
   position: absolute;
@@ -49,59 +47,58 @@ body {
   background-image: url(./Img/star-group.png);
   background-position: calc(100% + 488px) 100%;
   background-repeat: no-repeat;
-   
 }
 .top-page {
-    max-width: 768px;
-    padding-top: 196px;
-    &__title {
-      padding-bottom: 24px;
-      color: rgb(32, 32, 39);
-      font-size: 64px;
-      font-weight: 700;
-      line-height: 78px;
-      text-align: left;
-      &_about {
-        color: rgb(255, 255, 255);
-      }
-    }
-    &__description {
-      padding-right: 48px;
-      color: rgb(32, 32, 39);
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 32px;
-      text-align: left;
-      padding-bottom: 48px;
-      &_bold {
-        font-weight: 600;
-      }
-      &_about {
-        color: rgb(255, 255, 255);
-      }
-    }
-    &__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 247px;
-      height: 66px;
-      box-sizing: border-box;
-      border: 1px solid rgb(32, 32, 39);
-      border-radius: 60px;
-      background: rgb(32, 32, 39);
-      font-family: inherit;
+  max-width: 768px;
+  padding-top: 196px;
+  &__title {
+    padding-bottom: 24px;
+    color: rgb(32, 32, 39);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    &_about {
       color: rgb(255, 255, 255);
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 141.69%;
-      text-align: center;
-      text-decoration: none;
-      &:hover {
-      background: rgb(255, 255, 255);
-      color: rgb(32, 32, 39); 
-      } 
     }
+  }
+  &__description {
+    padding-right: 48px;
+    color: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    padding-bottom: 48px;
+    &_bold {
+      font-weight: 600;
+    }
+    &_about {
+      color: rgb(255, 255, 255);
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 247px;
+    height: 66px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    font-family: inherit;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: rgb(255, 255, 255);
+      color: rgb(32, 32, 39);
+    }
+  }
 }
 .ani-strip {
   margin-top: 156px;
@@ -113,7 +110,7 @@ body {
   height: 90px;
   overflow-x: hidden;
   text-wrap: nowrap;
-   
+
   //animation: strip-move 5s linear infinite;
 
   &__text {
@@ -126,8 +123,8 @@ body {
     text-transform: uppercase;
     padding-right: 51px;
     &::after {
-    content: url(./Img/Star.svg);
-    padding-left: 51px;
+      content: url(./Img/Star.svg);
+      padding-left: 51px;
     }
   }
 }
@@ -138,7 +135,7 @@ body {
 //}
 
 .about:hover {
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
 .about-games {
   padding-top: 94px;
@@ -148,7 +145,7 @@ body {
   background-repeat: no-repeat;
   height: 1470px;
   position: relative;
-  
+
   &__star {
     position: absolute;
     top: 77px;
@@ -168,7 +165,7 @@ body {
     height: 473px;
     width: 378px;
     transition: 0.5s;
-    
+
     &_bigger {
       height: 512px;
     }
@@ -209,10 +206,9 @@ body {
 }
 .star12 {
   position: absolute;
-  top: 822px; 
+  top: 822px;
   left: 40px;
 }
-
 
 .mini-games {
   height: 3500px;
@@ -222,7 +218,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-
   }
   &__title {
     font-size: 64px;
@@ -235,17 +230,18 @@ body {
     color: rgb(255, 255, 255);
   }
   &__card {
+    height: 500px;
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: rgb(255, 255, 255);
     display: flex;
+    justify-content: space-between;
     &_reverse {
       flex-direction: row-reverse;
     }
   }
   &__text {
     padding: 48px;
-    
   }
   &__name {
     font-size: 48px;
@@ -253,15 +249,18 @@ body {
     line-height: 59px;
     text-align: left;
     padding-bottom: 24px;
-    padding-right: 40px;
+    padding-right: 50px;
   }
   &__discription {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
     text-align: left;
+    padding-right: 81px;
     padding-bottom: 36px;
-    
+    &_last {
+      padding-right: 0;
+    }
     
   }
   &__btn {
@@ -284,18 +283,22 @@ body {
     &:hover {
       background: rgb(255, 255, 255);
       color: rgb(32, 32, 39);
-    }     
+    }
   }
   &__pic {
     background-size: cover;
   }
-
 }
 
 .mini-star1 {
   position: absolute;
   top: 92px;
-  left: calc(100% - 216px);
+  left: calc(100% - 150px);
+}
+.mini-star2 {
+  position: absolute;
+  bottom: 55px;
+  left: calc(100% - 178px);  
 }
 
 .foot {
@@ -310,5 +313,4 @@ body {
   }
 }
 
-
-@import 'mobile';
+@import "mobile";
