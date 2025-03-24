@@ -1,3 +1,5 @@
+@import 'vars.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +44,7 @@ body {
 }
 
 .top {
-  height: 800px;
+  height: 720px;
   background-color: rgb(225, 255, 143);
   background-image: url(./Img/star-group.png);
   background-position: calc(100% + 488px) 100%;
@@ -52,30 +54,15 @@ body {
   max-width: 768px;
   padding-top: 196px;
   &__title {
-    padding-bottom: 24px;
+    @extend %shared-titles;
     color: rgb(32, 32, 39);
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78px;
-    text-align: left;
-    &_about {
-      color: rgb(255, 255, 255);
-    }
   }
   &__description {
-    padding-right: 48px;
+    @extend %shared-styles;
     color: rgb(32, 32, 39);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: left;
-    padding-bottom: 48px;
-    &_bold {
-      font-weight: 600;
-    }
-    &_about {
-      color: rgb(255, 255, 255);
-    }
+  }
+  &__bold {
+    font-weight: 600;
   }
   &__link {
     display: flex;
@@ -101,7 +88,7 @@ body {
   }
 }
 .ani-strip {
-  margin-top: 156px;
+  // margin-top: 156px;
   background-color: rgb(188, 236, 48);
   display: flex;
   justify-content: left;
@@ -143,9 +130,17 @@ body {
   background-image: url(./Img/aboutGamesStar.png);
   background-position: calc(100% + 120px) 77px;
   background-repeat: no-repeat;
-  height: 1470px;
+  height: 1380px;
   position: relative;
-
+  &__main {
+    color: rgb(255, 255, 255);
+    @extend %shared-titles;
+    
+  }
+  &__description {
+    @extend %shared-styles;
+    color: rgb(255, 255, 255);
+  }
   &__star {
     position: absolute;
     top: 77px;
@@ -223,7 +218,6 @@ body {
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
-    letter-spacing: 0px;
     text-align: left;
     padding-top: 46px;
     padding-bottom: 72px;
@@ -261,7 +255,6 @@ body {
     &_last {
       padding-right: 0;
     }
-    
   }
   &__btn {
     width: 247px;
@@ -298,7 +291,7 @@ body {
 .mini-star2 {
   position: absolute;
   bottom: 55px;
-  left: calc(100% - 178px);  
+  left: calc(100% - 178px);
 }
 
 .foot {
