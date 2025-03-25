@@ -1,100 +1,140 @@
 @media (max-width: 425px) {
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;  
-    }
-    .star2 {
-        width: 35px;
-        height: 35px;
-        left: 38px;
-        top: 97px;
-    }
-    .star3 {
-        width: 21px;
-        height: 21px;
-        left: 92px;
-        top: 64px;
-    } 
-    .star4 {
-        width: 39px;
-        height: 41px;
-        left: 304px;
-        top: 580px;
-    }
-    .star5 {
-        width: 18px;
-        height: 18px;
-        left: 273px;
-        top: 557px;
-    }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .star2 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+  }
+  .star3 {
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .star4 {
+    width: 39px;
+    height: 41px;
+    left: 304px;
+    top: 580px;
+  }
+  .star5 {
+    width: 18px;
+    height: 18px;
+    left: 273px;
+    top: 557px;
+  }
 
-    .top {
-        height: 649px;
-        background-image: url(./Img/StarBGmobile.png);
-        background-position: calc(100% + 94px) -94px;
-        background-repeat: no-repeat;
+  .top {
+    height: 649px;
+    background-image: url(./Img/StarBGmobile.png);
+    background-position: calc(100% + 94px) -94px;
+    background-repeat: no-repeat;
+  }
+  .top-page {
+    // max-width: 343px;
+    padding-top: 147px;
+    &__title {
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: center;
     }
-    .top-page {
-        // max-width: 343px;
-        padding-top: 147px;
-        &__title {
-            font-size: 40px;
-            line-height: 49px;
-            letter-spacing: 0px;
-            text-align: center; 
-        }
-        &__description {
-            padding-right: 0px;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center; 
-            padding-bottom: 36px;
-        }
-        &__btn {
-            display: flex;
-            justify-content: center;
-
-        }
-        &__link {
-            width: 285px;
-            height: 55px;
-            font-size: 16px;
-            text-align: center;
-        }
+    &__description {
+      padding-right: 0px;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      padding-bottom: 36px;
     }
-    .ani-strip {
-        // margin-top: 131px;
-        //width: 1717px;
-        height: 51px;
-        &__text {
-            font-size: 16px;
-            padding-right: 27px;
-            &::after {
-                content: url(./Img/Star-mobile.svg);
-                padding-left: 27px;
-            }
-            
-        }
+    &__btn {
+      display: flex;
+      justify-content: center;
     }
-    .about-games {
-        display: none;
+    &__link {
+      width: 285px;
+      height: 55px;
+      font-size: 16px;
+      text-align: center;
     }
-    .mini-star1, .mini-star2 {
-        display: none;
+  }
+  .ani-strip {
+    // margin-top: 131px;
+    //width: 1717px;
+    height: 51px;
+    &__text {
+      font-size: 16px;
+      padding-right: 27px;
+      &::after {
+        content: url(./Img/Star-mobile.svg);
+        padding-left: 27px;
+      }
     }
-    .mini-games {
-        
-        &__title {
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 49px;
-        letter-spacing: 0px;
-        text-align: left;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        }
-
+  }
+  .about-games {
+    display: none;
+  }
+  .mini-star1,
+  .mini-star2 {
+    display: none;
+  }
+  .mini-games {
+    max-height: 3836px;
+    padding-bottom: 48px;
+    &__title {
+      font-size: 40px;
+      line-height: 49px;
+      padding-top: 48px;
+      padding-bottom: 48px;
     }
-    
-}    
-
+    &__block {
+        gap: 24px;
+       
+    }
+    &__card {
+      flex-direction: column-reverse;
+      max-height: 626px;
+    }
+    &__text {
+      padding: 29px;
+      padding-bottom: 32px;
+    }
+    &__name {
+      font-size: 32px;
+      line-height: 39px;
+      padding-right: 0px;
+      padding-bottom: 16px;
+    }
+    &__discription {
+      font-size: 16px;
+      line-height: 20px;
+      padding-right: 4px;
+      padding-bottom: 32px;
+      &_last {
+        padding-right: 40px;;
+      }
+    }
+    &__btn {
+      width: 285px;
+      height: 55px;
+      font-size: 16px;
+      
+    }
+    &__img {
+        height: auto;
+    }
+    &__pic {
+      width: 100%;
+    }
+  }
+  .foot {
+    padding: 40px;
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
