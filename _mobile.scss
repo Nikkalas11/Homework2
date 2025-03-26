@@ -86,7 +86,7 @@
     display: none;
   }
   .mini-games {
-    max-height: 3836px;
+    // max-height: 3836px;
     padding-bottom: 48px;
     &__title {
       font-size: 40px;
@@ -99,7 +99,7 @@
     }
     &__card {
       flex-direction: column-reverse;
-      max-height: 626px;
+      // max-height: 626px;
     }
     &__text {
       padding: 29px;
