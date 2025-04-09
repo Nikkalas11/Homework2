@@ -3,30 +3,27 @@
 // Например, из двух чисел — 8 и 4 — функция должна вернуть значение 4. Если мы передаем два одинаковых значения, например 6 и 6, то функция должна вернуть это значение (в данном случае — 6).
 
 function lessNumber(a, b) {
-    if (a < b) {
-        return a;
-    }
-    else {
-        return b;
-    }
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
 }
 console.log(lessNumber(4, 5));
 console.log(lessNumber(10, 5));
 console.log(lessNumber(5, 5));
 console.log(lessNumber(4, 8));
 
-
 // Задание 2
 // Напишите функцию, которая принимает число и возвращает: строку 'Число четное', если число четное; строку 'Число нечетное', если число нечетное.
 
 let evenNumber = (a) => {
-    return a % 2 == 0 ? `Число четное` : `Число нечетное`
+  return a % 2 == 0 ? `Число четное` : `Число нечетное`;
 };
 console.log(evenNumber(89));
 console.log(evenNumber(8));
 console.log(evenNumber(90));
 console.log(evenNumber(3));
-
 
 // Задание 3
 // Напишите функцию, которая принимает параметром число и выводит в консоль квадрат этого числа.
@@ -43,15 +40,38 @@ console.log(squareNumber(51));
 // Если пользователь введет число от 0 до 12 — выведет на экран 'Привет, друг!'.
 // Если пользователь введет число больше или равно 13 — выведет на экран 'Добро пожаловать!'.
 
+let userYear = Number(prompt(`Сколько Вам лет?`));
+function salute(userYear) {
+  if (userYear < 0) {
+    return `Вы ввели неправильное значение`;
+  } else if (userYear <= 12) {
+    return `Привет, друг!`;
+  } else {
+    return `Добро пожаловать!`;
+  }
+}
+alert(salute(userYear));
+
 // Задание 5
 // Напишите функцию, которая принимает на вход два числа, а далее следует алгоритму:
 
 // Проверяет, являются ли переданные параметры корректными числами.
-// Подсказка: используйте преобразование типов и 
+// Подсказка: используйте преобразование типов и
 // isNaN().
 // Если нет — возвращает строку 'Одно или оба значения не являются числом'.
 // Если оба параметра — числа, то возвращает произведение данных чисел.
 
+let a = prompt("ВВедите первое число");
+let b = prompt("Введите второе число");
+
+let multResult = function userMult(a, b) {
+  if (!isNaN(a) && !isNaN(b)) {
+    return a * b;
+  } else {
+    return "Одно или оба значения не являются числом";
+  }
+};
+alert(`Произведение чисел равно ${multResult(a, b)}`);
 
 // Задание 6
 // Напишите функцию, которая выполняет следующий алгоритм:
@@ -61,8 +81,41 @@ console.log(squareNumber(51));
 // Если значение является числом, возвращает строку 'n в кубе равняется <получившееся значение>', где n — введенное число, а <получившееся значение> — число, возведенное в куб.
 // Проверьте работу функции с числами от 0 до 10.
 
+let userNumberCube = prompt("Введите число, которое необходимо возвести в куб");
+function numberCube(userNumberCube) {
+  return !isNaN(userNumberCube)
+    ? userNumberCube ** 3
+    : "Переданный параметр не является числом";
+}
+alert(numberCube(userNumberCube));
+
 // Задание 7
 // Создайте два объекта, circle1 и circle2, каждый из которых имеет свойство radius.
 // Оба объекта должны иметь:
 // Метод getArea, который возвращает площадь круга, вычисляемую через радиус.
 // Метод getPerimeter, который возвращает периметр окружности.
+
+const circle1 = {
+  radius: 10,
+  getArea: getArea,
+  getPerimeter: getPerimeter,
+};
+
+const circle2 = {
+  radius: 20,
+  getArea: getArea,
+  getPerimeter: getPerimeter,
+};
+
+function getArea() {
+  return Math.PI * this.radius ** 2;
+}
+
+function getPerimeter() {
+  return Math.PI * 2 * this.radius;
+}
+
+console.log(circle1.getArea);
+console.log(circle2.getArea);
+console.log(circle1.getPerimeter);
+console.log(circle2.getPerimeter);
