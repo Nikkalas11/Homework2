@@ -216,7 +216,6 @@ body {
 }
 
 .mini-games {
-  max-height: 3500px;
   background-color: rgb(32, 32, 39);
   position: relative;
   padding-bottom: 144px;
@@ -236,7 +235,6 @@ body {
   color: rgb(255, 255, 255);
 }
 .mini-games__card {
-  max-height: 500px;
   border-radius: 30px;
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
