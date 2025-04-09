@@ -71,7 +71,7 @@ let multResult = function userMult(a, b) {
     return "Одно или оба значения не являются числом";
   }
 };
-alert(`Произведение чисел равно ${multResult(a, b)}`);
+alert(multResult(a, b));
 
 // Задание 6
 // Напишите функцию, которая выполняет следующий алгоритм:
@@ -96,13 +96,13 @@ alert(numberCube(userNumberCube));
 // Метод getPerimeter, который возвращает периметр окружности.
 
 const circle1 = {
-  radius: 10,
+  radius: 1,
   getArea: getArea,
   getPerimeter: getPerimeter,
 };
 
 const circle2 = {
-  radius: 20,
+  radius: 2,
   getArea: getArea,
   getPerimeter: getPerimeter,
 };
@@ -115,7 +115,7 @@ function getPerimeter() {
   return Math.PI * 2 * this.radius;
 }
 
-console.log(circle1.getArea);
-console.log(circle2.getArea);
-console.log(circle1.getPerimeter);
-console.log(circle2.getPerimeter);
+console.log(circle1.getArea());
+console.log(circle2.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getPerimeter());
