@@ -5,13 +5,16 @@ function guessNumber() {
   let attempt = 0;
   while (true) {
     attempt ++;
-    if (isNaN(userNumber) || !Boolean(userNumber)) {
-      alert(`Вы ввели не правильное значение. Попробуйте снова`);
-      break;
-    } else if (userNumber > randomNumber) {
-      userNumber = prompt(`Ваше число ${userNumber} - больше`);
+    if (isNaN(userNumber))  {
+        userNumber = prompt(`Вы ввели не правильное значение. Попробуйте снова`);
+    }  else if (!Boolean(userNumber)) {
+        alert(`До свидания. Ха - ха - ха`)
+        break
+      }
+     else if (userNumber > randomNumber) {
+      userNumber = prompt(`Ваше число ${userNumber} - больше секретного`);
     } else if (userNumber < randomNumber) {
-      userNumber = prompt(`Ваше число ${userNumber} - меньше`);
+      userNumber = prompt(`Ваше число ${userNumber} - меньше секретного`);
     } else {
       alert(`Вы угадали задуманное число ${randomNumber} за ${attempt} попыток`);
       break;
